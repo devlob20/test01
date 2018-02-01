@@ -573,9 +573,11 @@ h1.bienvenido {
 .social-icons{display: none;}
 .li.nav-item.active a{text-decoration: line-through;}
 @media (max-width: 991px) {
-.navbar-brand{text-align: center;display: block;width: 100%;padding-bottom: 15px;}
+.navbar-expand-lg{padding: 0px!important;}
+.navbar-brand{text-align: center;display: block;width: 100%;padding-bottom: 15px;height: 10vh!important;background: #000;margin: 0px;}
 .navbar-toggler{position: absolute;background: transparent!important;top: 25px;}
-.collapse.show{background: #000;transition: 1s;border-top: 1px solid gray;}
+.collapse.show{background: #000;transition: 1s;border-top: 1px solid gray;height: 90vh!important;}
+
 li.nav-item{
   margin: 0 auto;
   margin-top: 15px;
@@ -585,4 +587,8 @@ li.nav-item{
 .social-icons{display:flex; padding: 40px 0%;margin:0px;align-items: center;justify-content: center;list-style: none;}
 .social-icons li{margin:0px 6%;color: #fff;font-size: 22px;color: #8a8a8b;}
 .navbar-nav{margin:40px 0px;}
+.navbar-brand img{width: auto!important;height: auto!important;padding: 2%;}
+}
+@media (max-width: 405px) {
+  .watch-video a{display: block;margin: 0px;margin-bottom: 20px;}
 }

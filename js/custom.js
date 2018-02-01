@@ -44,3 +44,24 @@ $('.navbar-toggler').click(function(){
     console.log('menusar');
   }
 });
+
+
+$(document).ready(function(){
+  adaptarlogo();
+});
+
+$(window).resize(function(){
+  adaptarlogo();
+});
+
+
+function adaptarlogo(){
+  var alto = $(window).height();
+  var ancho = $(window).width();
+  if(ancho <= 991){
+    $('body > nav > div > a > img').attr('src','img/logo-responsive.png');
+  }else{
+    $('body > nav > div > a > img').attr('src','img/logo.svg');
+  }
+
+}
